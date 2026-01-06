@@ -1,22 +1,29 @@
 
-# 📚 AskMyDoc: Interactive PDF Chat Assistant
+# AskMyDoc: Interactive PDF Chat Assistant
 
 AskMyDoc is an AI-powered assistant designed to simplify the way you interact with PDF documents. Instead of manually scanning through pages, you can have natural conversations to quickly extract key insights, clarify concepts, and locate relevant information. Whether you're working with research papers, technical manuals, or business reports, AskMyDoc helps you focus on what matters—saving time and boosting productivity with intelligent, context-aware responses.
 
 
+<img width="1874" height="760" alt="screenshot-20260106-154355Z-selected" src="https://github.com/user-attachments/assets/d4a51b70-7949-4c20-bd87-14ea498dafb0" />
+
+
+<img width="1857" height="787" alt="screenshot-20260106-154410Z-selected" src="https://github.com/user-attachments/assets/87915714-c3f9-4632-96b6-6904370577cc" />
+
+
+## Demo 
 
 https://github.com/user-attachments/assets/f5f5ea16-aac9-41f8-8d87-974deb716961
 
 
 ---
 
-## 🚀 Features
+## Features
 
-* 📄 Page-wise intelligent context retrieval
-* 🤖 ReAct-style LLM responses with chat history awareness
-* 🧠 FAISS vector store for fast semantic search
-* 🔍 Clarifying follow-up questions using reflective reasoning
-* 🖥️ Split-screen UI for chat and PDF viewer
+* Page-wise intelligent context retrieval
+* ReAct-style LLM responses with chat history awareness
+* FAISS vector store for fast semantic search
+* Clarifying follow-up questions using reflective reasoning
+* Split-screen UI for chat and PDF viewer
 
 ---
 
@@ -36,9 +43,9 @@ https://github.com/user-attachments/assets/f5f5ea16-aac9-41f8-8d87-974deb716961
 
 ---
 
-## 🔄 Workflow Overview
+## Workflow Overview
 
-### 🎛️ Frontend Workflow (React.js)
+### Frontend Workflow (React.js)
 
 1. User uploads a PDF file.
 2. PDF is displayed in an embedded viewer.
@@ -51,7 +58,7 @@ https://github.com/user-attachments/assets/f5f5ea16-aac9-41f8-8d87-974deb716961
 
 ---
 
-### 🔧 Backend Workflow (FastAPI)
+### Backend Workflow (FastAPI)
 
 ```mermaid
 graph TD
@@ -67,7 +74,7 @@ graph TD
 
 ---
 
-## 🧠 Backend Internals
+## Backend Internals
 
 * **PDF Parsing**: Uses PyMuPDF to extract clean page-wise text.
 * **Chunking**: Each page's text is split into semantically coherent/aware chunks using langchain semantic chunking method.
@@ -86,7 +93,7 @@ graph TD
 
 ---
 
-## 🔮 Future Work
+## Future Work
 
 * **Context Classification**:
 
@@ -104,7 +111,7 @@ graph TD
 
 ---
 
-## 📦 Installation
+## Installation
 To run it locally:
 ```bash
 git clone https://github.com/your-repo/askmydoc.git
@@ -118,7 +125,7 @@ uvicorn backend.main_backend:app --host 127.0.0.1 --port 8000 --reload
 
 ---
 
-## 🛠️ Endpoints Summary
+## Endpoints Summary
 
 | Endpoint            | Method | Description                                 |
 | ------------------- | ------ | ------------------------------------------- |
